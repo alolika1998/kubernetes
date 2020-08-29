@@ -1,0 +1,13 @@
+apiVErsion: v1
+kind: Pod
+metadata:
+  name: result-app-pod
+  labels:
+    name: resultapp-pod
+    app: demo-voting-app
+spec:
+  containers:
+    - name: result-app
+      image: kodkloud/examplevotingapp_result:v1
+      ports:
+        - containerPort: 80
